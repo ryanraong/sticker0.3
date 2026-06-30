@@ -1,0 +1,22 @@
+{
+  "name": "Sticker Studio",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-22-bookworm",
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+  "forwardPorts": [3000],
+  "portsAttributes": {
+    "3000": {
+      "label": "Sticker Studio",
+      "onAutoForward": "openPreview"
+    }
+  },
+  "postCreateCommand": "cd app-sticker && npm install",
+  "postStartCommand": "cd app-sticker && npm run dev -- --hostname 0.0.0.0",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}
