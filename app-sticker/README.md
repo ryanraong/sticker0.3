@@ -7,7 +7,7 @@ This is the Supabase-backed version of the sticker MVP.
 1. Run the schema in Supabase:
 
    ```text
-   outputs/sticker-mvp/supabase/schema.sql
+   app-sticker/supabase/schema.sql
    ```
 
 2. Copy `.env.example` to `.env.local`.
